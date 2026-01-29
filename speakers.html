@@ -1,24 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speakers | Commit DAW 2026</title>
 
-    <!-- CSS compartido -->
-    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+    
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.5;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #282371;
+        }
+        header .logo h1 {
+            font-size: 1.5rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.3rem 0.5rem;
+            border-radius: 5px;
+        }
+        nav ul li a.active,
+        nav ul li a:hover {
+            background-color: #fff;
+            color: #222;
+        }
+        main {
+            padding: 2rem;
+        }
+        .speakers-section h2 {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .speakers-section .section-description {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .speaker-card {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .speaker-card:hover {
+            transform: translateY(-5px);
+        }
+        .speaker-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        .speaker-card h3 {
+            margin-bottom: 0.3rem;
+        }
+        .ray {
+            color: #ff69b4;
+        }  
+        .adrian {
+            color: #1e90ff;
+        }
+        .hamza {
+            color: #32cd32;
+        }
+        .mario {
+            color: #ffa500;
+        }
+        .anas {
+            color: #8a2be2;
+        }
+        .ismail {
+            color: #00ced1;
+        }
+        .yassin {
+            color: #ff4500;
+        }
+        .speaker-role {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .speaker-bio {
+            font-size: 0.9rem;
+        }
+
+
+        footer {
+            background-color: #282371;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            border-radius: 10px;
+
+
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                margin-top: 0.5rem;
+            }
+
+            .speakers-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    
 </head>
 
 <body>
 
-    <!-- HEADER -->
+
     <header>
 
         <div class="logo">
             <h1>Commit DAW 2026</h1>
         </div>
 
-        <!-- NAV -->
         <nav>
             <ul class="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
@@ -32,10 +170,10 @@
     </header>
 
 
-    <!-- CONTENIDO PRINCIPAL -->
+
     <main>
 
-        <!-- SECCIÓN PRINCIPAL -->
+
         <section class="speakers-section">
 
             <h2>Nuestros Ponentes</h2>
@@ -43,31 +181,30 @@
                 Conoce a los expertos que participarán en Commit DAW 2026.
             </p>
 
-            <!-- GRID DE SPEAKERS -->
+
             <div class="speakers-grid">
 
-                <!-- SPEAKER 1 -->
                 <article class="speaker-card">
 
-                    <img src="img/speaker1.jpg" alt="Foto de Ana García">
+                    <img src="img/1.jpg" alt="RAY">
 
-                    <h3>Ana García</h3>
+                    <h3 class="ray">RAY</h3>
                     <p class="speaker-role">Full Stack Developer</p>
 
                     <p class="speaker-bio">
                         Especialista en aplicaciones web modernas con React y Node.js.
-                        Más de 10 años de experiencia en proyectos internacionales.
+                        Más de 2 años de experiencia en proyectos internacionales.
                     </p>
 
                 </article>
 
 
-                <!-- SPEAKER 2 -->
+
                 <article class="speaker-card">
 
-                    <img src="img/speaker2.jpg" alt="Foto de Carlos López">
+                    <img src="img/2.jpg" alt="Adrian">
 
-                    <h3>Carlos López</h3>
+                    <h3 class="adrian">Adrian</h3>
                     <p class="speaker-role">Cybersecurity Engineer</p>
 
                     <p class="speaker-bio">
@@ -78,28 +215,28 @@
                 </article>
 
 
-                <!-- SPEAKER 3 -->
+
                 <article class="speaker-card">
 
-                    <img src="img/speaker3.jpg" alt="Foto de Laura Pérez">
+                    <img src="img/3.jpg" alt="Hamza">
 
-                    <h3>Laura Pérez</h3>
+                    <h3 class="hamza">Hamza</h3>
                     <p class="speaker-role">UX/UI Designer</p>
 
                     <p class="speaker-bio">
-                        Diseñadora especializada en experiencia de usuario
+                        Diseñador especializado en experiencia de usuario
                         para aplicaciones móviles y web.
                     </p>
 
                 </article>
 
 
-                <!-- SPEAKER 4 -->
+
                 <article class="speaker-card">
 
-                    <img src="img/speaker4.jpg" alt="Foto de David Martín">
+                    <img src="img/4.jpg" alt="Mario">
 
-                    <h3>David Martín</h3>
+                    <h3 class="mario">Mario</h3>
                     <p class="speaker-role">DevOps Engineer</p>
 
                     <p class="speaker-bio">
@@ -109,6 +246,50 @@
 
                 </article>
 
+                <article class="speaker-card">
+
+                    <img src="img/5.jpg" alt="Anas">
+
+                    <h3 class="anas">Anas</h3>
+                    <p class="speaker-role">DevOps Engineer</p>
+
+                    <p class="speaker-bio">
+                        Especialista en automatización, CI/CD y cloud computing.
+                        Trabaja actualmente en proyectos cloud.
+                    </p>
+
+                </article>
+                <article class="speaker-card">
+
+                    <img src="img/6.jpg" alt="Ismail">
+
+                    <h3 class="ismail">Ismail</h3>
+                    <p class="speaker-role">DevOps Engineer</p>
+
+                    <p class="speaker-bio">
+                        Especialista en automatización, CI/CD y cloud computing.
+                        Trabaja actualmente en proyectos cloud.
+                    </p>
+
+                </article>
+
+
+                <article class="speaker-card">
+
+                    <img src="img/6.jpg" alt="yassin">
+
+                    <h3 class="yassin"> Yassin</h3>
+                    <p class="speaker-role">DevOps Engineer</p>
+
+                    <p class="speaker-bio">
+                        Especialista en automatización, CI/CD y cloud computing.
+                        Trabaja actualmente en proyectos cloud.
+                    </p>
+
+                </article>
+
+
+
             </div>
 
         </section>
@@ -116,18 +297,19 @@
     </main>
 
 
-    <!-- FOOTER -->
+
     <footer>
 
         <p>
-            © 2026 Commit DAW - Todos los derechos reservados
+            2026 Commit DAW - Todos los derechos reservados
         </p>
 
         <p>
-            Desarrollado por el equipo DAW
+            Desarrollado por LA DAW
         </p>
 
     </footer>
 
 </body>
+
 </html>
