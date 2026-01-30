@@ -4,7 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+           * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #282371;
+        }
+
+        header .logo h1 {
+            font-size: 1.5rem;
+            color: #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.3rem 0.5rem;
+            border-radius: 5px;
+        }
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            background-color: #fff;
+            color: #222;
+        }
+    </style>
 </head>
 <body>
     <header>
