@@ -13,52 +13,54 @@
       --bg-light: #f4f7fb;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
 
-    body {
-      background-color: var(--bg-light);
-      color: #222;
-    }
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-    /* HEADER */
-    .header {
-      background-color: var(--blue-dark);
-      padding: 1rem;
-    }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.5;
+        }
 
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1100px;
-      margin: auto;
-    }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #282371;
+        }
 
-    .logo {
-      color: white;
-      font-size: 1.2rem;
-    }
+        header .logo h1 {
+            font-size: 1.5rem;
+            color: #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
 
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-    }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
 
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-    }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.3rem 0.5rem;
+            border-radius: 5px;
+        }
 
-    .nav-links a.active {
-      font-weight: bold;
-      text-decoration: underline;
-    }
+        nav ul li a.active,
+        nav ul li a:hover {
+            background-color: #fff;
+            color: #222;
+        }
+
 
     /* MAIN */
     .main {
@@ -197,10 +199,10 @@
         <nav>
             <ul class="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="speakers.html" class="active">Ponentes</a></li>
+                <li><a href="speakers.html">Ponentes</a></li>
                 <li><a href="agenda.html">Agenda</a></li>
                 <li><a href="location.html">Ubicación</a></li>
-                <li><a href="ticket.html">Entradas</a></li>
+                <li><a href="ticket.html" class="active">Entradas</a></li>
                 <li><a href="invitados.html">Invitados</a></li>
                 <li><a href="imagenes.html">Imagenes</a></li>
             </ul>
